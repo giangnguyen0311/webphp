@@ -18,11 +18,11 @@ $brands = isset($_GET['lap_id']) ? $_GET['lap_id'] : '';
 // }
 
 if (!empty($_GET['id'])) {
-  $sql = "SELECT * FROM `products` WHERE id = '$id'";
+  $sql = "SELECT * FROM `products` WHERE id = '$id'"; //lấy sp theo id
   $result_mb = mysqli_query($connect, $sql);
   $value_mb = mysqli_fetch_array($result_mb);
   if (empty($value_mb)) {
-    header('location:404.php');
+    header('location:404.php'); //nếu ko có quay lại trang 404
   }
   if (!empty($_POST['content'])) {
 

@@ -37,7 +37,7 @@ $sum_quantitys = 0;
                                                 <button class="cart_type btn-update-quantity" data-id='<?php echo $id ?>' data-type='incre'>+</button>
                                             </div>
                                             <div class="col-table-p col-table-2 col-table-price">
-                                                <span class="cart-price">
+                                                <span class="cart-price">   
                                                     <?php echo $each['price'] ?>
                                                 </span>
                                                 <button class="cart_type btn-cart-delete" data-id="<?php echo $id ?>">Xóa</button>

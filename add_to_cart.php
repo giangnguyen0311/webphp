@@ -8,10 +8,11 @@
 
 
     if(empty($_SESSION['cart'][$id])){
-        require 'admin/root.php';
+        require 'admin/root.php'; //require để kết nối database
         $sql = "SELECT * from products where id = '$id'";
         $result = mysqli_query($connect, $sql);
         $each = mysqli_fetch_array($result);
+        // lấy thông tin sp để thêm vào session với tên là cart
         $_SESSION['cart'][$id]['name'] = $each['name'];
         $_SESSION['cart'][$id]['photo'] = $each['photo'];
         $_SESSION['cart'][$id]['price'] = $each['price'];

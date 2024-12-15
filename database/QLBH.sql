@@ -15,9 +15,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
--- Dumping database structure for dn_web
-CREATE DATABASE IF NOT EXISTS `dn_web` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `dn_web`;
 
 -- Dumping structure for table dn_web.admins
 CREATE TABLE IF NOT EXISTS `admins` (

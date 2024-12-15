@@ -16,6 +16,7 @@ if(!empty($_SESSION['carts'])){
     foreach($carts as $each){
         $total_price += $each['quantity'] * $each['price'];
     }
+    // sau khi bấm thanh toán thông tin khách hàng được thêm vào bảng order
     $sql = "INSERT INTO `orders`( customer_id, name_receiver, phone_receiver, address_receiver, status, total_price)
     VALUES ('$customer_id','$name_receiver', '$phone_receiver', '$address_receiver', '$status', '$total_price')";
     mysqli_query($connect, $sql);
