@@ -10,7 +10,7 @@ require '../check_super_admin_login.php';
     include '../partials/head_view.php';
     ?>
 
-    <title>Manufacture - insert</title>
+    <title>Nhà sản xuất</title>
 
 </head>
 
@@ -25,8 +25,8 @@ require '../check_super_admin_login.php';
         ?>
         <div class="row">
             <div class="col">
-                <p> This is add manufacture page !</p>
-                <a class="btn btn-primary" href="index.php">List manufacture</a>
+                <p> Thêm nhà sản xuất</p>
+                <a class="btn btn-primary" href="index.php">Danh sách</a>
             </div>
         </div>
         <div class="row mt-5">
